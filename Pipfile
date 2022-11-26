@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+aws-lambda-powertools = {extras = ["all"], version = "*"}
+fastapi = "*"
+mangum = "*"
+
+[dev-packages]
+cfn-lint = "*"
+pyflakes = "*"
+faker = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-html = "*"
+pytest-mock = "*"
+pytest-runner = "*"
+
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
+
