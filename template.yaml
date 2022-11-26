@@ -1,0 +1,51 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: SME Forum (aka SMEF) API
+
+Globals:
+  Function:
+    Runtime: python3.9
+    MemorySize: 512
+    CodeUri: src/
+    Timeout: 5
+    Layers:
+      - !Ref LambdaDependencies
+    Environment:
+      Variables:
+        LOG_LEVEL: 'DEBUG'
+        POWERTOOLS_SERVICE_NAME: smef-api
+    AutoPublishAlias: live
+
+Resources:
+  LambdaDependencies:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: !Sub "${AWS::StackName}-dependencies"
+      ContentUri: dependencies/
+      CompatibleRuntimes:
+        - python3.9
+      RetentionPolicy: Delete
+    Metadata:
+      BuildMethod: python3.9
+
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: api.lambda_handler
+      Policies:
+        - arn:aws:iam::aws:policy/CloudWatchLambdaInsightsExecutionRolePolicy
+
+  AuthorizerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: authorizer.lambda_handler
+      Policies:
+        - arn:aws:iam::aws:policy/CloudWatchLambdaInsightsExecutionRolePolicy
+
+Outputs:
+  ApiFunction:
+    Description: API Function ARN
+    Value: !GetAtt ApiFunction.Arn
+  AuthorizerFunction:
+    Description: Authorizer Function ARN
+    Value: !GetAtt AuthorizerFunction.Arn
