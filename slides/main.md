@@ -1,3 +1,82 @@
+---
+# v0.0.2.
+---	
+    **Municipality** needs a way **to reach out to entrepreneurs**
+	who will be affected so that can identify better formulations and as a result **more efficient & impactful policies**
+
+("Need statement")
+---
+
+### Open-source Governance
+	Imagine the Country	where policies are written as an open-source software by humans...
+
+TBD: PR screen-shot,
+
+The following to mention (?): story around Collaboration, open-source philosophy...
+
+More on Open-source way (https://opensource.com/open-source-way):
+
+- Transparency
+- Collaboration
+- Release early and often
+- Inclusive meritocracy
+- Community
+
+Democratic principles through open-source philosophies
+Making step back to set a context around open-source as our main driving principle...
+
+Government Open Source Models (GOSMs) have the potential to play an important role by engaging the community and other stakeholders in policy analytics. A new generation of information sharing, GOSMs are the future of effective open governments – and embody the principles and philosophy of Open Source Software (OSS) by allowing public use, modification and re-distribution of the model’s source code.
+
+GOSMs level the playing field for everyone: politicians, the media, lobby groups, stakeholders, and the general public. By opening the doors of policy evaluation to the community, governments can tap into new and undiscovered capabilities for creativity, innovation, and efficiency within the public sphere. But what are the practical implications for the strategic interactions between stakeholders and governments in public policy design?
+---
+### Advanced tech
+	... and supported by machines 
+
+TBD: screen-shoot with Ontology?
+
+The following to mention?:
+- Ontology knowledge base powered by advanced technology,
+- Rich knowledge base around SMEs and business sectors
+- Continuous data enrichment and learning
+---
+### Continuous learning
+	... which gather information from from administrative, specialised sources, social channels, public internet.
+
+TBD: screen-shoot with scrappers?
+
+---
+### AI powered
+	... and use AI technologies to understand humans and act as reliable assistants
+
+TBD: screen-shot with Comprehend
+Understand human written policies?
+
+---
+## Demo: Future of Municipality Employee work experience
+	(a moment of such)
+
+Explain what happens behind the scenes with a ref to building blocks from previous slide
+
+---
+# SMEs Forum (aka SMEF)
+	**facilitates the collaboration** by mean of **data, advanced technology and open-source principles** that leads to better formulations and as a result **more efficient & impactful policies**
+
+Our HLD goes here with some most-wow tech details with a link to slide 4:
+
+- "knowledge base": Num of Businesses scrapped
+- "knowledge base": AWS Neptune to empower our complex relations knowledge based
+- "continuous data enrichment": scrappers layer (some nice details about what we've managed to grab)
+
+- "policy classification": AWS Comprehend for classification + ability to extend it with any custom AI-powered engines, also more engagement of the Municipality worker to help validate and "train" the system
+
+- "collaboration": Github based UI to follow "open-source" philosophy
+
+- Lambda behind API Gateway as a way to quickly provision secure API
+
+---
+# v0.0.1.
+---
+
 # Open-source Governance
  	Democratic principles though open-source philosophies
 
