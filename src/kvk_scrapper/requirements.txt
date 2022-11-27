@@ -1,0 +1,4 @@
+scrapy
+boto3
+pandas
+rdfpandas
